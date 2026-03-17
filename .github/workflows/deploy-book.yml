@@ -33,7 +33,12 @@ jobs:
           pip install "jupyter-book>=0.15,<2" sphinx-book-theme
 
       - name: Build Jupyter Book
-        run: jupyter-book build . --path-output _build/html
+        run: jupyter-book build .
+
+      - name: Verify build output
+        run: |
+          ls -la _build/html/
+          test -f _build/html/index.html && echo "index.html OK" || (echo "ERROR: index.html missing" && exit 1)
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
