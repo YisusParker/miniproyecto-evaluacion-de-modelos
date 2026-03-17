@@ -1,0 +1,34 @@
+# Jupyter Book - Proyecto Integrador ML (estilo documento con barra lateral y TOC)
+title: Proyecto Integrador de Aprendizaje Automático
+author: Miniproyecto Evaluación de Modelos
+logo: ""
+
+# Tema oscuro por defecto (estilo como el documento de referencia)
+sphinx:
+  recursive_update: true
+  config:
+    exclude_patterns: [".venv/**", "_build/**", "**/__pycache__/**", "**/.ipynb_checkpoints/**", "Instrucciones.md"]
+    html_theme: sphinx_book_theme
+    html_theme_options:
+      theme_switch: true
+      path_to_docs: ""
+      repository_url: ""
+      use_repository_button: false
+      use_edit_page_button: false
+      use_fullscreen_button: true
+      launch_buttons:
+        notebook_interface: "jupyterlab"
+    html_context:
+      default_mode: "dark"
+    html_sidebars:
+      "**": ["sidebar-nav-bs.html", "search-field.html"]
+
+# Ejecutar notebooks al construir (opcional; si ya tienen salidas, no es necesario)
+execute:
+  execute_notebooks: "off"
+
+# Parsear y mostrar salidas
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist

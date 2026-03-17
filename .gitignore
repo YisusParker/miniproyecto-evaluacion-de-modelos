@@ -1,0 +1,31 @@
+# Build and cache
+_build/
+.jupyter_cache/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Data (CSV muy grande; el libro usa salidas ya guardadas en el notebook)
+*.csv
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# Env / secrets
+.env
+.env.local

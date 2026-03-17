@@ -1,0 +1,5 @@
+# Tabla de contenidos (barra lateral + panel Contents)
+format: jb-book
+root: intro
+chapters:
+  - file: proyecto_integrador_ml
