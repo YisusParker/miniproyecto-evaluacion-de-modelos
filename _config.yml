@@ -8,6 +8,7 @@ sphinx:
   recursive_update: true
   config:
     exclude_patterns: [".venv/**", "_build/**", "**/__pycache__/**", "**/.ipynb_checkpoints/**", "Instrucciones.md"]
+    html_baseurl: https://yisusparker.github.io/miniproyecto-evaluacion-de-modelos/
     html_theme: sphinx_book_theme
     html_theme_options:
       theme_switch: true
